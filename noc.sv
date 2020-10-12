@@ -2,7 +2,7 @@ module noc_intf(input clk, input reset,
 	 			input noc_to_dev_ctl, input[7:0] noc_to_dev_data,
 	 			input stopin, input pushout, input firstout,
 	 			output reg noc_from_dev_ctl, output reg [7:0] noc_from_dev_data,
-	 			output pushin, output firstin, output stopout)
+	 			output reg pushin, output reg firstin, output reg stopout)
 
 integer count_id, count_id_d;//count packet operation
 integer count_addr,count_addr_d;//count addr
